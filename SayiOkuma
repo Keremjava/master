@@ -1,0 +1,14 @@
+package master;
+import.java.util.Scanner;
+
+public class SayiOkuma{
+  public static void main(String[] args){
+    Scanner sayigir=new Scanner(System.in);
+    System.out.println("Bir sayi giriniz");
+    int sayi=sayigir.nextInt();
+    
+    
+    System.out.println("Gridiniginiz sayi"+sayi);
+    }
+    }
+    
