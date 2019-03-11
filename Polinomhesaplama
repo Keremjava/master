@@ -1,0 +1,24 @@
+packegae Polinom;
+
+import.java.util.Scanner;
+public class polinom{
+
+  public static int polinomhesabi(int a, int b, int c){
+    int carpim =(a*a)+(b*b)+(3*c);
+    return carpim;
+    }
+    public static void main(String[] args){
+      int aDegeri, bDegeri,cDegeri;
+      Scanner giris = new Scanner (System.in);
+      System.out.println("Lütfen a Degerini giriniz");
+      aDegeri = giris.nextInt();
+      System.out.println("Lütfen b Degerini giriniz");
+      bDegeri = giris.nextInt();
+      System.out.println("Lütfen c Degerini giriniz");
+      cDegeri = giris.nextInt();
+      
+      System.out.println("Sonuc:"+ polinomhesabi(aDegeri,bDegeri,cDegeri));
+      
+      }
+      }
+    
