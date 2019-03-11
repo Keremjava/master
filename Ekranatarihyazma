@@ -1,0 +1,22 @@
+packeage java;
+
+import java.util.Scanner;
+
+public class Ekranatarihyazma{
+
+    public static void main(String[] args){
+    
+    Scanner datum = new Scanner(System.in);
+    System.out.println("sayi olarak bir gün giriniz");
+    int gün= datum.nextInt();
+    
+    System.out.println("sayi olarak bir ay giriniz");
+    int ay= datum.nextInt();
+    
+    System.out.println("sayi olarak bir yil giriniz");
+    int yil= datum.nextInt();
+    
+    System.out.println(gün+"."+ay+"."+yil);
+    
+    }
+}
