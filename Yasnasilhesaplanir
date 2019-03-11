@@ -11,6 +11,9 @@ import java.text.*;
 
 public class Yashesaplama{
       public static void main (String[] args){
+      
+        //Şu anda sistemin bulunduğu günü önce string'e sonra da işlem yapabilmek için integer'a dönüştür.    
+  
       Date simdikiGun = new Date( );
       SimpleDateFormat gun = new SimpleDateFormat("DD");
       String gunuSDonustur = gun.format(new Date());
