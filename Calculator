@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+  public static void main (String[] args) throws java.lang.Exception{
+
+    Calculator.Calculating();
+
+  }
+
+  public static void Calculating() {
+
+    String usersCalc;
+
+    Scanner userInput = new Scanner( System.in );
+    System.out.println("Enter your calculation: ");
+    usersCalc = userInput.next();
+
+    //splits when sees plus
+    String[] parts = usersCalc.split("[+-/*]");
+
+    char operator = usersCalc.contains("+") ? '+' : usersCalc.contains("-") ? '-' : usersCalc.contains("*") ? '*' : '/';
+
+    //everything left to splitter
+    String part1 = parts[0];
+    //everything right to splitter
+    String part2 = parts[1];
+    int result = -1;
+
+    int answerOne = Integer.parseInt(part1);
+    int answerTwo = Integer.parseInt(part2);
+
+    switch (operator){
+      case '+':
+        result = answerOne + answerTwo;
+        break;
+      case '-':
+        result = answerOne - answerTwo;
+        break;
+      case '/':
+        if (answerTwo == 0) {
+          System.out.println("Invalid input.");
+          return;
+        }
+        result = answerOne / answerTwo;
+        break;
+      case'*':
+        result = answerOne * answerTwo;
+        break;
+    }
+    System.out.println(result);
+  }
+}
